@@ -1,12 +1,13 @@
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('simple-pwa-v1').then(cache => {
+    caches.open('simple-pwa-v2').then(cache => {
       return cache.addAll([
         './',
         './index.html',
         './main.js',
         './manifest.json',
-        './android-chrome-192x192.png'
+        './android-chrome-192x192.png',
+        './run.gif'
       ]);
     })
   );
