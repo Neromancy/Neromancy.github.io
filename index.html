@@ -13,13 +13,19 @@
 </head>
 <body>
   <h1>Hello</h1>
-  <h2>Tes Update Sesudah Tekan</h2>
+  <h2>Ctrl+F5 untuk update page</h2>
   <button id="clickBtn">Tekan</button>
+
+  <img id="gerak" src="run.gif" style="
+    position: absolute;
+    top: 150px;
+    left: 0;
+    height: 100px;
+  ">
 
   <script src="main.js"></script>
   <script>
     if ('serviceWorker' in navigator) {
-        //cek apakah service worker didukung
       navigator.serviceWorker.register('sw.js')
         .then(() => console.log('Service Worker registered!'))
         .catch(err => console.error(err));
