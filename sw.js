@@ -1,6 +1,8 @@
+// sw.js
 self.addEventListener('install', event => {
   event.waitUntil(
-    caches.open('simple-pwa-v2').then(cache => {
+    // MARK: Changed cache name from 'simple-pwa-v2' to 'simple-pwa-v3'
+    caches.open('simple-pwa-v3').then(cache => {
       return cache.addAll([
         './',
         './index.html',
